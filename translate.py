@@ -30,7 +30,7 @@ text_output.pack()
 frame_option = LabelFrame(window, text="Select language")
 frame_option.place(x=70, y=120)
 lang = ["English to Vietnamese", "Vietnamese to English",
-        "Chinese to Vietnamese", "Vietnamese to Chinese"]
+        "French to Vietnamese", "Vietnamese to French"]
 x = IntVar()
 x.set("0")
 for i in range(len(lang)):
@@ -58,11 +58,11 @@ def trans():
             src = 'vi'
             dest = 'en'
         elif x.get() == 2:
-            src = 'zh-tw'
+            src = 'fr'
             dest = 'vi'
         elif x.get() == 3:
             src = 'vi'
-            dest = 'zh-tw'
+            dest = 'fr'
 
         output = translate.translate(text=input, src=src, dest=dest)
         text_output.insert(END, output.text)
@@ -77,6 +77,8 @@ def hadleCopy():
         clipboard.copy(output)
         messagebox.showinfo(
             "Notification! ", "Copied translation to clipboard")
+        clear()
+
     else:
         messagebox.showwarning("Warning!", "The translation content is empty")
 
