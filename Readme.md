@@ -1,3 +1,5 @@
+- link to download : "https://drive.google.com/drive/folders/1BhhE7Nf5nSz_XJUiN5VGepxtODjLs9pb?usp=sharing"
+
 # Các bước cài đặt phần mềm dịch văn bản
 
 - Bước 1 : + Sau khi giải nén thư mục ta được 1 folder có tên "Google Translate V1.0"
