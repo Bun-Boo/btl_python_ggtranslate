@@ -1,8 +1,5 @@
-from cgitb import text
-from msilib.schema import ComboBox
 from tkinter import *
 from tkinter import messagebox
-import tkinter.ttk as exTk
 import googletrans
 from googletrans import Translator
 import clipboard
@@ -11,8 +8,6 @@ window = Tk()
 window.title("Google translate v1.0")
 window.geometry("800x700")
 window.resizable(False, False)
-
-# def
 
 
 # label
@@ -34,12 +29,6 @@ text_output.pack()
 # options
 frame_option = LabelFrame(window, text="Select language")
 frame_option.place(x=70, y=120)
-# cmb
-# cmb = exTk.Combobox(frame_option, width=20, font="arial 10")
-# cmb['values'] = ('English to Vietnamese', 'Vietnamese to English')
-# cmb['state'] = 'readonly'
-# cmb.current(0)
-# cmb.pack()
 lang = ["English to Vietnamese", "Vietnamese to English",
         "Chinese to Vietnamese", "Vietnamese to Chinese"]
 x = IntVar()
@@ -62,8 +51,6 @@ def trans():
     input = text_input.get(1.0, END)
     if len(input) > 2 and len(input) < 3000:
         translate = Translator()
-    # src = 'en'
-    # dest = 'vi'
         if x.get() == 0:
             src = 'en'
             dest = 'vi'
@@ -81,7 +68,7 @@ def trans():
         text_output.insert(END, output.text)
     else:
         messagebox.showerror(
-            "Error! ", "Please enter text below 3000 words!")
+            "Error! ", "Please do not leave blank and enter text less than 3000 words!")
 
 
 def hadleCopy():
@@ -97,7 +84,6 @@ def hadleCopy():
 def hadlePaste():
     text_input.insert(END, clipboard.paste())
     trans()
-    # messagebox.showinfo("Notification ! ", "Pasted to clipboard")
 # options
 
 
