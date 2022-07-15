@@ -1,4 +1,4 @@
-- link to download : "https://drive.google.com/drive/folders/1BhhE7Nf5nSz_XJUiN5VGepxtODjLs9pb?usp=sharing"
+- link to download : "https://drive.google.com/drive/folders/1BB_QLGg0ZgvpdbqYuV2Fxrob0nV7cs5G?usp=sharing"
 
 # Các bước cài đặt phần mềm dịch văn bản
 
